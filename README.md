@@ -1,24 +1,16 @@
+Summer 2018 Bil495 project
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+ISSUES
 
+1-) As a user, I want to be able to create an appointment in my calendar from the web application so that I can keep track of my appointments from the web application.
 
-Welcome to your Rails project on Cloud9 IDE!
+2-) As a user, I want to be able to create an appointment in my calendar from the mobile application so that I can keep track of my appointments from the mobile application.
 
-To get started, just do the following:
+3-) As a user, I want to be able to search my appointments with a keyword so that I can find an appointment easily.
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://HOSTNAME/).
+4-) As a user, I want to be able to create recurring appointments so that I do not have to create many repeating appointments manually.
 
-Happy coding!
-The Cloud9 IDE team
+5-) As a user, I want to be able to get notified on my phone when an appointment time is approaching so that I do not miss my appointments.
 
+6-) As a user, I want to be able to ente two date as input so that I can see all informations(how many days, how many appointments...) between these dates.
 
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
