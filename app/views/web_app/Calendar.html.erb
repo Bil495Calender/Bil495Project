@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<!-- https://yuilibrary.com/yui/docs/calendar/calendar-simple.html -->
+<head>
+	<title>Calendar</title>
+</head>
+
+<body class="yui3-skin-sam">
+	<style>
+		.yui3-button {
+		    margin:10px 0px 10px 0px;
+		    color: #fff;
+		    background-color: #3476b7;
+		}
+	</style>
+
+
+<div id="demo" class="yui3-skin-sam yui3-g">
+
+  <div id="leftcolumn" class="yui3-u">
+     <div id="mycalendar"></div>
+	<button type="button" value=1 onclick = "button(1)">Search</button>
+     <button type="button" value=2 onclick = "button(2)">Create recurring</button>
+     <button type="button" value=3 onclick = "button(3)">All appointments between two dates</button>
+  </div>
+
+  <div id="rightcolumn" class="yui3-u">
+   <div id="links" style="padding-left:20px;">
+      Selected date: <span id="selecteddate"></span>
+   </div>
+  </div>
+</div>
+
+
+<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+
+<script type="text/javascript">
+  YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
+
+      var calendar = new Y.Calendar({
+        contentBox: "#mycalendar",
+        width:'500px',
+        date: new Date()}).render();
+
+      var dtdate = Y.DataType.Date;
+
+      calendar.on("selectionChange", function (ev) {
+
+        var newDate = ev.newSelection[0];
+
+        Y.one("#selecteddate").setHTML(dtdate.format(newDate));//print islemi
+      });
+
+  });
+
+function button(id) {
+	    if(id == 1){
+	    }
+	    else if(id == 2){
+	      day = prompt("Enter a day for recurring appointment");
+	      appointment = prompt("Enter text for appointment");
+	    }
+	    else if(id == 3){
+	    }
+	  }
+  
+  </script>
+
+	</body>
+</html>
