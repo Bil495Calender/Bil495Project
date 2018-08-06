@@ -1,0 +1,27 @@
+<%= form_with(model: app_appointment, local: true) do |form| %>
+  <% if app_appointment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(app_appointment.errors.count, "error") %> prohibited this app_appointment from being saved:</h2>
+
+      <ul>
+      <% app_appointment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :AppointmentBody %>
+    <%= form.text_area :AppointmentBody %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DatenTime %>
+    <%= form.datetime_select :DatenTime %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

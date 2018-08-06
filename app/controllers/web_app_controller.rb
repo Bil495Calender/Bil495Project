@@ -1,4 +1,4 @@
 class WebAppController < ApplicationController
-  def Calendar
+  def Calender
   end
 end

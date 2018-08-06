@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class WebAppControllerTest < ActionController::TestCase
-  test "should get 495Calendar" do
-    get :495Calendar
+class WebAppControllerTest < ActionDispatch::IntegrationTest
+  test "should get Calender" do
+    get web_app_Calender_url
     assert_response :success
   end
 

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Appointmentbody:</strong>
+  <%= @app_appointment.AppointmentBody %>
+</p>
+
+<p>
+  <strong>Datentime:</strong>
+  <%= @app_appointment.DatenTime %>
+</p>
+
+<%= link_to 'Edit', edit_app_appointment_path(@app_appointment) %> |
+<%= link_to 'Back', app_appointments_path %>
